@@ -1,0 +1,30 @@
+{
+  "name": "opencode-history",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    "./server": {
+      "default": "./dist/index.js"
+    },
+    "./tui": {
+      "default": "./dist/tui.js"
+    }
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.4.7",
+    "@opentui/core": ">=0.1.99",
+    "@opentui/solid": ">=0.1.99",
+    "solid-js": ">=1.9.0"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.14.18",
+    "zod": "^3.23.0",
+    "effect": "^3.0.0"
+  },
+  "devDependencies": {
+    "solid-js": "^1.9.0",
+    "@opentui/solid": "^0.2.2",
+    "@opentui/core": "^0.2.2"
+  }
+}
