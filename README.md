@@ -5,24 +5,24 @@ Maintains a local SQLite database of session history, tracking sessions, message
 ## Features
 
 - **SQLite-backed history** (WAL mode, indexed for performance)
-- **Automatic event-driven recording** — session create/update/delete, message updates, file edits, session status changes
-- **Session tracking** — ID, title, directory, project, model, agent, cost, token counts, pinned status, parent/fork relationships
-- **Message tracking** — role, preview, model, cost, token counts, tool calls, file attachments
+- **Automatic event-driven recording** - session create/update/delete, message updates, file edits, session status changes
+- **Session tracking** - ID, title, directory, project, model, agent, cost, token counts, pinned status, parent/fork relationships
+- **Message tracking** - role, preview, model, cost, token counts, tool calls, file attachments
 - **File edit tracking** per session
 - **Fork sessions** from any point (with TUI navigation)
 - **Revert sessions** to a specific message
 - **Export sessions** to Markdown files
 - **Copy session conversations** to clipboard
 - **Pin/unpin sessions** for quick access
-- **Aggregate stats** — total sessions, messages, cost, tokens, files, projects
-- **Activity timeline** — daily cost/token breakdown
+- **Aggregate stats** - total sessions, messages, cost, tokens, files, projects
+- **Activity timeline** - daily cost/token breakdown
 - **Top models and agents** by usage
-- **TUI plugin** — keyboard-navigable session list with fork/select/escape
-- **Slash commands** — `/recent`, `/fork`
+- **TUI plugin** - keyboard-navigable session list with fork/select/escape
+- **Slash commands** - `/recent`, `/fork`
 
 ## Installation
 
-Add the plugin to your `opencode.json`:
+In `opencode.json`:
 
 **From GitHub:**
 
@@ -46,7 +46,7 @@ Add the plugin to your `opencode.json`:
 
 ## Tool
 
-The `history` tool is exposed with the following actions:
+`history` tool actions:
 
 | Action | Description |
 |--------|-------------|
@@ -78,7 +78,7 @@ The `history` tool is exposed with the following actions:
 
 ## Configuration
 
-Options can be set in `opencode.json` under the plugin config key:
+Config (in `opencode.json`):
 
 | Option | Default | Description |
 |--------|---------|-------------|
